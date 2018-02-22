@@ -1,0 +1,8 @@
+
+<h1>HOLAAAAA</h1>
+<div *ngFor="let n of entries">
+  {{n | json}}
+  <h2>{{n.title}}</h2>
+  <p>{{n.content}}</p>
+  <a [routerLink]="['entries', n._id]">View Details </a>
+</div>
